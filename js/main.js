@@ -33,7 +33,7 @@ function playRound (playerSelection, computerSelection) {
         return `You lose, ${compChoice} beats ${playerChoice}!`;
     }
 }
-// loop 5 games
+//looping 5 games
 function game () {
     let keepGoing = true;
     while (keepGoing === true) {
