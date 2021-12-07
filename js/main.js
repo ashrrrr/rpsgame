@@ -23,9 +23,11 @@ function playRound (playerSelection, computerSelection) {
 
     if (playerChoice === compChoice) {
         return `Everyone loses, you both picked ${compChoice}!`;
-    } else if ((playerChoice === 'rock' && compChoice === 'scissors') || (playerChoice === 'scissors' && compChoice === 'paper') || (playerChoice === 'paper' && compChoice === 'rock')) {
-        playerScore++;
-        return `You win, ${playerChoice} beats ${compChoice}!`;
+    } else if ((playerChoice === 'rock' && compChoice === 'scissors') || 
+        (playerChoice === 'scissors' && compChoice === 'paper') || 
+        (playerChoice === 'paper' && compChoice === 'rock')) {
+            playerScore++;
+            return `You win, ${playerChoice} beats ${compChoice}!`;
     } else {
         compScore++;
         return `You lose, ${compChoice} beats ${playerChoice}!`;
